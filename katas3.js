@@ -10,7 +10,11 @@ function kata1() {
     // implemente o código do kata 1 aqui
     let resultado = ''
     for (let i = 0; i <= 25; i++) {
-        resultado += [i] + ', '
+        if(i === 25){
+            resultado += [i]
+        } else {
+            resultado += [i] + ', '
+        }
     }
 
     return showResults(resultado);
@@ -20,7 +24,11 @@ function kata2() {
     // implemente o código do kata 2 aqui
     let resultado = ''
     for (let i = 25; i >= 1; i--) {
-        resultado += [i] + ', '
+        if(i === 1){
+            resultado += [i]
+        } else {
+            resultado += [i] + ', '
+        }
     }
 
     return showResults(resultado)
@@ -30,7 +38,11 @@ function kata3() {
     // implemente o código do kata 3 aqui
     let resultado = ''
     for (let i = -1; i >= -25; i--) {
-        resultado += [i] + ', '
+        if(i === -25){
+            resultado += [i]
+        } else {
+            resultado += [i] + ', '
+        }
     }
 
     return showResults(resultado)
@@ -40,7 +52,11 @@ function kata4() {
     // implemente o código do kata 4 aqui
     let resultado = ''
     for (let i = -25; i <= -1; i++) {
-        resultado += [i] + ', '
+        if(i === -1) {
+            resultado += [i]
+        } else {
+            resultado += [i] + ', '
+        }
     }
 
     return showResults(resultado);
@@ -51,7 +67,11 @@ function kata5() {
     let resultado = ''
     for (let i = 25; i >= -25; i--) {
         if (i % 2 !== 0) {
-            resultado += [i] + ', '
+            if(i === -25) {
+                resultado += [i]
+            } else {
+                resultado += [i] + ', '
+            }
         }
     }
 
@@ -63,7 +83,11 @@ function kata6() {
     let resultado = ''
     for (let i = 1; i <= 100; i++) {
         if (i % 3 === 0) {
-            resultado += [i] + ', '
+            if (i === 99) {
+                resultado += [i]
+            } else {
+                resultado += [i] + ', '
+            }
         }
     }
 
@@ -75,7 +99,11 @@ function kata7() {
     let resultado = ''
     for (let i = 1; i <= 100; i++) {
         if (i % 7 === 0) {
-            resultado += [i] + ', '
+            if (i === 98) {
+                resultado += [i]
+            } else {
+                resultado += [i] + ', '
+            }
         }
     }
 
@@ -87,11 +115,18 @@ function kata8() {
     let resultado = ''
     for (let i = 100; i >= 1; i--) {
         if (i % 3 == 0) {
-            resultado += [i] + ', '
+            if (i === 3) {
+                resultado += [i]
+            } else {
+                resultado += [i] + ', '
+            }
         }
-
         if (i % 7 === 0) {
-            resultado += [i] + ', '
+            if (i === 3) {
+                resultado += [i]
+            } else {
+                resultado += [i] + ', '
+            }
         }
     }
 
@@ -103,7 +138,11 @@ function kata9() {
     let resultado = ''
     for (let i = 1; i <= 100; i++) {
         if ((i % 5 === 0) & (i % 2 !== 0)) {
-            resultado += [i] + ', '
+            if (i === 95) {
+                resultado += [i]
+            } else {
+                resultado += [i] + ', '
+            }
         }
     }
     return showResults(resultado)
@@ -113,7 +152,11 @@ function kata10() {
     // implemente o código do kata 10 aqui
     let resultado = ''
     for (let i = 0; i < 20; i++) {
-        resultado += sampleArray[i] + ', '
+        if (i === 19) {
+            resultado += sampleArray[i]
+        } else {
+            resultado += sampleArray[i] + ', '
+        }
     }
     return showResults(resultado)
 }
@@ -123,7 +166,11 @@ function kata11() {
     let resultado = ''
     for (let i = 0; i < sampleArray.length; i++) {
         if (sampleArray[i] % 2 === 0) {
-            resultado += sampleArray[i] + ', '
+            if (i === sampleArray.length - 1) {
+                resultado += sampleArray[i]
+            } else {
+                resultado += sampleArray[i] + ', '
+            }
         }
     }
     return showResults(resultado)
@@ -134,7 +181,11 @@ function kata12() {
     let resultado = ''
     for (let i = 0; i < sampleArray.length; i++) {
         if (sampleArray[i] % 2 !== 0) {
-            resultado += sampleArray[i] + ', '
+            if (sampleArray[i] === 535) {
+                resultado += sampleArray[i]
+            } else {
+                resultado += sampleArray[i] + ', '
+            }
         }
     }
     return showResults(resultado)
@@ -145,7 +196,11 @@ function kata13() {
     let resultado = ''
     for (let i = 0; i < sampleArray.length; i++) {
         if (sampleArray[i] % 8 === 0) {
-            resultado += sampleArray[i] + ', '
+            if (sampleArray[i] === 472) {
+                resultado += sampleArray[i]
+            } else {
+                resultado += sampleArray[i] + ', '
+            }
         }
     }
     return showResults(resultado)
@@ -155,7 +210,11 @@ function kata14() {
     // implemente o código do kata 14 aqui
     let resultado = ''
     for (let i = 0; i < 20; i++) {
-        resultado += sampleArray[i]**2 + ', '
+        if (i === 20) {
+            resultado += sampleArray[i]
+        } else {
+            resultado += sampleArray[i]**2 + ', '
+        }
     }
     return showResults(resultado)
 }
